@@ -36,13 +36,41 @@
                     <h1>Eva Magdy</h1>
                     <p class="lead text-light">Front End Web Developer</p>
                     <div class="portfolio-bio">
-                        <p>Welcome and thank you for your interest in my work. My coding journey started in 2013 at faculty 
-                            of computer and information until 2017 then i keep learning At ITI (information technology institute)
-                            and then worked at codex global company I discovered something that combined my passion for creating
+                        <p>Welcome and thank you for your interest in my work. My coding journey started in 2013 at
+                            faculty
+                            of computer and information until 2017 then i keep learning At ITI (information technology
+                            institute)
+                            and then worked at codex global company I discovered something that combined my passion for
+                            creating
                             beautiful things with my desire to keep learning and never get bored. <br><br> Since then
                             I've stumbled many times, learned more than I ever imagined, stared bugs in the face for
                             hours, and just kept going. I'm a hard-worker, I don't give up, and I hold myself to a high
                             standard. </p>
+
+                        <button type="button" class="collapsible">Education:</button>
+                        <div class="content">
+                            <ol>
+                                <li><strong>Information Technology Institute ( ITI ) Diploma </strong>,Web Development
+                                    (Open Source).
+                                    Ministry of Communications and Information Technology (Nov 2017: Feb 2018)</li>
+                                <li><strong> of Computer Science and Information Technology </strong> , (Information
+                                    System Department)
+                                    Assuit University,(2013: 2017)</li>
+
+                            </ol>
+                        </div>
+                        <button type="button" class="collapsible">Experience:</button>
+                        <div class="content">
+                            <p>Working as Front end Developer at Codex Global Company using Angular and ionic Frameworks</p>
+                        </div>
+                        <!-- <button type="button" class="collapsible">Open Section 3</button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div> -->
+
+
                     </div>
                 </div>
                 <div class="cell portfolio-meta small-12 medium-2 large-3">
@@ -55,15 +83,15 @@
                         <li>Angular Framework</li>
                         <li>jQuery</li>
                         <li>ionic Framework</li>
-                        
+
                     </ul>
                     <h6>Contact Info</h6>
                     <ul>
                         <li>+971-55-908-0904</li>
                         <li>evamagdy21@gmail.com</li>
-                    </ul><a class="button expanded"
-                        href="https://www.linkedin.com/in/eva-magdy/">LinkedIn</a><a
+                    </ul><a class="button expanded" href="https://www.linkedin.com/in/eva-magdy/">LinkedIn</a><a
                         class="button expanded" href="https://github.com/evamagdy21">GitHub</a>
+                        <a class="button expanded" href="./static/file/Eva Magdy zaref.pdf" download="">My Cv</a>
                 </div>
             </div>
         </article>
@@ -74,5 +102,21 @@
 <script src="./static/js/what-input.js"></script>
 <script src="./static/js/foundation.js"></script>
 <script src="./static/js/scripts.js"></script>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
 
 </html>
